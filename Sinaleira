@@ -1,0 +1,72 @@
+byte ledVerde = 2;
+int tempoVerde = 2000;
+
+byte ledAmarelo = 3;
+int tempoAmarelo = 500;
+
+byte ledVermelho = 4;
+int tempoVermelho = 1000;
+
+
+void setup() {
+
+pinMode(ledVerde,OUTPUT); //led verde
+pinMode(ledAmarelo,OUTPUT); // led amarelo
+pinMode(ledVermelho,OUTPUT); //led vermelho
+  
+}
+
+
+void loop() {
+digitalWrite(ledVerde,HIGH);//led verde acesso
+delay(tempoVerde); //espera por 2 segundos
+digitalWrite(ledVerde,LOW); //apago o led verde
+delay(tempoVerde); //espera por 2 segundos
+digitalWrite(ledVerde,HIGH);//led verde acesso
+delay(tempoVerde); //espera por 2 segundos
+digitalWrite(ledVerde,LOW); //apago o led verde
+delay(tempoVerde); //espera por 2 segundos
+digitalWrite(ledVerde,HIGH);//led verde acesso
+delay(tempoVerde); //espera por 2 segundos
+digitalWrite(ledVerde,LOW); //apago o led verde
+
+//o ledVErde piscou por 10 segundos com intervalos de 2 segundos
+
+
+digitalWrite(ledAmarelo,HIGH); // como é um semaforo ja tenho que liga o led amarelo logo em seguida 
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo, LOW); //apago o led amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo,HIGH); //ligo o Led Amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo, LOW); //apago o led amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo,HIGH); //ligo o Led Amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo, LOW); //apago o led amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo,HIGH); //ligo o Led Amarelo
+delay(tempoAmarelo);//espero meio segundo 
+digitalWrite(ledAmarelo, LOW); //apago o led amarelo
+
+//o ledAmarelo pisca durante 10 segundos com intervalos de meio segundo
+
+
+digitalWrite(ledVermelho,HIGH); //ligo led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho, LOW); //apago o led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho,HIGH); //ligo led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho, LOW); //apago o led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho,HIGH); //ligo led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho, LOW); //apago o led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho,HIGH); //ligo led vermelho
+delay(tempoVermelho); //espero por 1 segundo
+digitalWrite(ledVermelho,LOW); //ligo led vermelho
+
+// o ledVermelho pisca durante 6 segundos com intervalos de 1 segundo
+}
